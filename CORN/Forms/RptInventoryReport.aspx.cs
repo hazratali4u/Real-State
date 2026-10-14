@@ -1,0 +1,101 @@
+﻿using CORNBusinessLayer.Classes;
+using CORNBusinessLayer.Logics;
+using CORNBusinessLayer.Reports;
+using CORNCommon.Classes;
+using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+
+public partial class Forms_RptInventoryReport : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            LoadDistributor();
+            CategoryLoad();
+            Configuration.SystemCurrentDateTime = (DateTime)this.Session["CurrentWorkDate"];
+            txtStartDate.Text = Configuration.SystemCurrentDateTime.ToString("dd-MMM-yyyy");
+            txtEndDate.Text = Configuration.SystemCurrentDateTime.ToString("dd-MMM-yyyy");
+        }
+    }
+    public void CategoryLoad()
+    {
+        DrpProject.Items.Clear();
+        var qry = DropDowns.PROJECTDropDown();
+        if (qry.Any())
+        {
+
+            DrpProject.DataSource = qry;
+            DrpProject.TextField = "PROJECT_NAME";
+            DrpProject.ValueField = "PROJECT_ID";
+            DrpProject.DataBind();
+            DrpProject.SelectedIndex = 0;
+            //DevExpress.Web.ListEditItem myDefaultItem = new DevExpress.Web.ListEditItem("All", Constants.IntNullValue.ToString());
+            //myDefaultItem.Selected = true;
+            //DrpProject.Items.Insert(0, myDefaultItem);
+        }
+        else
+        {
+            DrpProject.Items.Clear();
+            DevExpress.Web.ListEditItem myDefaultItem = new DevExpress.Web.ListEditItem("All", Constants.IntNullValue.ToString());
+            myDefaultItem.Selected = true;
+            DrpProject.Items.Insert(0, myDefaultItem);
+        }
+    }
+    private void LoadDistributor()
+    {
+        DistributorController DController = new DistributorController();
+        DataTable dt = DController.SelectDistributorInfo(Constants.IntNullValue, int.Parse(this.Session["UserId"].ToString()), int.Parse(this.Session["CompanyId"].ToString()));
+        clsWebFormUtil.FillDxComboBoxList(drpDistributor, dt, 0, 2, true);
+        if (dt.Rows.Count > 0)
+        {
+            drpDistributor.SelectedIndex = 0;
+        }
+    }
+    private void showReport(int reportType)
+    {
+        DocumentPrintController DPrint = new DocumentPrintController();
+        VenderEntryController RptCustCtl = new VenderEntryController();
+
+        DataSet ds = null;
+        DataTable dt = DPrint.SelectReportTitle(int.Parse(drpDistributor.SelectedItem.Value.ToString()));
+        {
+            ReportDocument CrpReport = new ReportDocument();
+
+            ds = RptCustCtl.GetInventoryReport(int.Parse(drpDistributor.SelectedItem.Value.ToString()),
+              DateTime.Parse(txtStartDate.Text + " 00:00:00"), DateTime.Parse(txtEndDate.Text + " 23:59:59"), int.Parse(DrpProject.SelectedItem.Value.ToString()));
+            CrpReport = new CrpInventoryReport();
+            CrpReport.SetDataSource(ds);
+            CrpReport.Refresh();
+
+            CrpReport.SetParameterValue("FromDate", DateTime.Parse(txtStartDate.Text));
+            CrpReport.SetParameterValue("To_date", DateTime.Parse(txtEndDate.Text));
+            CrpReport.SetParameterValue("Location", drpDistributor.SelectedItem.Text);
+            CrpReport.SetParameterValue("CategoryName", DrpProject.SelectedItem.Text);
+            CrpReport.SetParameterValue("CompanyName", dt.Rows[0]["COMPANY_NAME"].ToString());
+
+            Session.Add("CrpReport", CrpReport);
+            Session.Add("ReportType", reportType);
+            const string url = "'Default.aspx'";
+            const string script = "<script language='JavaScript' type='text/javascript'> window.open(" + url + ",\"Link\",\"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width=800,height=600,left=10,top=10\");</script>";
+            Type cstype = this.GetType();
+            ClientScriptManager cs = Page.ClientScript;
+            cs.RegisterStartupScript(cstype, "OpenWindow", script);
+        }
+    }
+    protected void btnViewPDF_Click(object sender, EventArgs e)
+    {
+        showReport(0);
+    }
+    protected void btnViewExcel_Click(object sender, EventArgs e)
+    {
+        showReport(1);
+    }
+}

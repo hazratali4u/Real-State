@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AtharModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_SALE_DETAIL">
+          <Key>
+            <PropertyRef Name="SALE_DETAIL_ID" />
+          </Key>
+          <Property Name="SALE_DETAIL_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SALE_MASTER_ID" Type="int" Nullable="false" />
+          <Property Name="ITEM_INFO_ID" Type="int" Nullable="false" />
+          <Property Name="SALE_AMOUNT" Type="money" />
+          <Property Name="DISCOUNT" Type="money" />
+          <Property Name="TOKEN_AMOUNT" Type="money" />
+          <Property Name="DOWN_PAYMENT" Type="money" />
+          <Property Name="BALANCE" Type="money" />
+          <Property Name="COMMISSION_PERCENT" Type="money" />
+          <Property Name="COMMISSION_VALUE" Type="money" />
+          <Property Name="COMMISSION" Type="money" />
+          <Property Name="DEBIT_AMOUNT" Type="money" />
+          <Property Name="SALE_CLOSED" Type="bit" />
+          <Property Name="USER_ID" Type="int" />
+          <Property Name="TIME_STEMP" Type="datetime" />
+          <Property Name="IS_DELETED" Type="bit" />
+          <Property Name="PROJECT_ID" Type="int" />
+          <Property Name="CATEGORY_ID" Type="int" />
+          <Property Name="SUB_CATEGORY_ID" Type="int" />
+          <Property Name="REF_ID" Type="int" />
+          <Property Name="ITEM_LOG_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SALE_MASTER">
+          <Key>
+            <PropertyRef Name="SALE_MASTER_ID" />
+          </Key>
+          <Property Name="SALE_MASTER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DATE" Type="datetime" Nullable="false" />
+          <Property Name="DISTRIBUTOR_ID" Type="int" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="int" Nullable="false" />
+          <Property Name="CUSTOMER_ID" Type="int" Nullable="false" />
+          <Property Name="COMMISSIONAGENT_ID" Type="int" Nullable="false" />
+          <Property Name="TOTAL_SALE_AMOUNT" Type="money" />
+          <Property Name="TOTAL_DISCOUNT" Type="money" />
+          <Property Name="TOTAL_TOKEN_AMOUNT" Type="money" />
+          <Property Name="TOTAL_DOWN_PAYMENT" Type="money" />
+          <Property Name="TOTAL_BALANCE" Type="money" />
+          <Property Name="TOTAL_COMMISSION" Type="money" />
+          <Property Name="REMARKS" Type="nvarchar" MaxLength="150" />
+          <Property Name="USER_ID" Type="int" />
+          <Property Name="TIME_STEMP" Type="datetime" />
+          <Property Name="IS_DELETED" Type="bit" />
+          <Property Name="VOUCHER_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TYPE_ID" Type="int" />
+          <Property Name="CATEGORY_ID" Type="int" />
+          <Property Name="SUBCATEGORY_ID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="AtharModelStoreContainer">
+          <EntitySet Name="tbl_SALE_DETAIL" EntityType="Self.tbl_SALE_DETAIL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_SALE_MASTER" EntityType="Self.tbl_SALE_MASTER" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AtharModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_SALE_DETAIL">
+          <Key>
+            <PropertyRef Name="SALE_DETAIL_ID" />
+          </Key>
+          <Property Name="SALE_DETAIL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SALE_MASTER_ID" Type="Int32" Nullable="false" />
+          <Property Name="ITEM_INFO_ID" Type="Int32" Nullable="false" />
+          <Property Name="SALE_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DISCOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOKEN_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DOWN_PAYMENT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="BALANCE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="COMMISSION_PERCENT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="COMMISSION_VALUE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="COMMISSION" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DEBIT_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="SALE_CLOSED" Type="Boolean" />
+          <Property Name="USER_ID" Type="Int32" />
+          <Property Name="TIME_STEMP" Type="DateTime" Precision="3" />
+          <Property Name="IS_DELETED" Type="Boolean" />
+          <Property Name="PROJECT_ID" Type="Int32" />
+          <Property Name="CATEGORY_ID" Type="Int32" />
+          <Property Name="SUB_CATEGORY_ID" Type="Int32" />
+          <Property Name="REF_ID" Type="Int32" />
+          <Property Name="ITEM_LOG_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_SALE_MASTER">
+          <Key>
+            <PropertyRef Name="SALE_MASTER_ID" />
+          </Key>
+          <Property Name="SALE_MASTER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DISTRIBUTOR_ID" Type="Int32" Nullable="false" />
+          <Property Name="PROJECT_ID" Type="Int32" Nullable="false" />
+          <Property Name="CUSTOMER_ID" Type="Int32" Nullable="false" />
+          <Property Name="COMMISSIONAGENT_ID" Type="Int32" Nullable="false" />
+          <Property Name="TOTAL_SALE_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOTAL_DISCOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOTAL_TOKEN_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOTAL_DOWN_PAYMENT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOTAL_BALANCE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TOTAL_COMMISSION" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="REMARKS" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="USER_ID" Type="Int32" />
+          <Property Name="TIME_STEMP" Type="DateTime" Precision="3" />
+          <Property Name="IS_DELETED" Type="Boolean" />
+          <Property Name="VOUCHER_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE_ID" Type="Int32" />
+          <Property Name="CATEGORY_ID" Type="Int32" />
+          <Property Name="SUBCATEGORY_ID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="DbCalls2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_SALE_DETAIL" EntityType="Self.tbl_SALE_DETAIL" />
+          <EntitySet Name="tbl_SALE_MASTER" EntityType="Self.tbl_SALE_MASTER" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AtharModelStoreContainer" CdmEntityContainer="DbCalls2">
+          <EntitySetMapping Name="tbl_SALE_DETAIL">
+            <EntityTypeMapping TypeName="AtharModel.tbl_SALE_DETAIL">
+              <MappingFragment StoreEntitySet="tbl_SALE_DETAIL">
+                <ScalarProperty Name="SALE_DETAIL_ID" ColumnName="SALE_DETAIL_ID" />
+                <ScalarProperty Name="SALE_MASTER_ID" ColumnName="SALE_MASTER_ID" />
+                <ScalarProperty Name="ITEM_INFO_ID" ColumnName="ITEM_INFO_ID" />
+                <ScalarProperty Name="SALE_AMOUNT" ColumnName="SALE_AMOUNT" />
+                <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+                <ScalarProperty Name="TOKEN_AMOUNT" ColumnName="TOKEN_AMOUNT" />
+                <ScalarProperty Name="DOWN_PAYMENT" ColumnName="DOWN_PAYMENT" />
+                <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+                <ScalarProperty Name="COMMISSION_PERCENT" ColumnName="COMMISSION_PERCENT" />
+                <ScalarProperty Name="COMMISSION_VALUE" ColumnName="COMMISSION_VALUE" />
+                <ScalarProperty Name="COMMISSION" ColumnName="COMMISSION" />
+                <ScalarProperty Name="DEBIT_AMOUNT" ColumnName="DEBIT_AMOUNT" />
+                <ScalarProperty Name="SALE_CLOSED" ColumnName="SALE_CLOSED" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="TIME_STEMP" ColumnName="TIME_STEMP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="PROJECT_ID" ColumnName="PROJECT_ID" />
+                <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+                <ScalarProperty Name="SUB_CATEGORY_ID" ColumnName="SUB_CATEGORY_ID" />
+                <ScalarProperty Name="REF_ID" ColumnName="REF_ID" />
+                <ScalarProperty Name="ITEM_LOG_ID" ColumnName="ITEM_LOG_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SALE_MASTER">
+            <EntityTypeMapping TypeName="AtharModel.tbl_SALE_MASTER">
+              <MappingFragment StoreEntitySet="tbl_SALE_MASTER">
+                <ScalarProperty Name="SALE_MASTER_ID" ColumnName="SALE_MASTER_ID" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="DISTRIBUTOR_ID" ColumnName="DISTRIBUTOR_ID" />
+                <ScalarProperty Name="PROJECT_ID" ColumnName="PROJECT_ID" />
+                <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+                <ScalarProperty Name="COMMISSIONAGENT_ID" ColumnName="COMMISSIONAGENT_ID" />
+                <ScalarProperty Name="TOTAL_SALE_AMOUNT" ColumnName="TOTAL_SALE_AMOUNT" />
+                <ScalarProperty Name="TOTAL_DISCOUNT" ColumnName="TOTAL_DISCOUNT" />
+                <ScalarProperty Name="TOTAL_TOKEN_AMOUNT" ColumnName="TOTAL_TOKEN_AMOUNT" />
+                <ScalarProperty Name="TOTAL_DOWN_PAYMENT" ColumnName="TOTAL_DOWN_PAYMENT" />
+                <ScalarProperty Name="TOTAL_BALANCE" ColumnName="TOTAL_BALANCE" />
+                <ScalarProperty Name="TOTAL_COMMISSION" ColumnName="TOTAL_COMMISSION" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="TIME_STEMP" ColumnName="TIME_STEMP" />
+                <ScalarProperty Name="IS_DELETED" ColumnName="IS_DELETED" />
+                <ScalarProperty Name="VOUCHER_NO" ColumnName="VOUCHER_NO" />
+                <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+                <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+                <ScalarProperty Name="SUBCATEGORY_ID" ColumnName="SUBCATEGORY_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

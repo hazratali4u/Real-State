@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4266bd96c28647f7aa7a7ab98dab0e97" Name="Diagram1">
+        <EntityTypeShape EntityType="NSAModel.ACCOUNT_HEAD" Width="1.5" PointX="5.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ACCOUNT_HEAD_ASSIGN_PRINCIPAL" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ACCOUNT_INTERFACE" Width="1.5" PointX="13.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Allowance" Width="1.5" PointX="10.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Attendance" Width="1.5" PointX="16.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BARCODE" Width="1.5" PointX="2.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BASKET_DETAIL" Width="1.5" PointX="7.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BASKET_MASTER" Width="1.5" PointX="12.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BLOCK" Width="1.5" PointX="16.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BRAND_ASSIGNMENT" Width="1.5" PointX="16.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CASH_SKIMMING" Width="1.5" PointX="17.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CATEGORY" Width="1.5" PointX="18.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CHECK_BOOK" Width="1.5" PointX="18.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CHEQUE_DETAIL" Width="1.5" PointX="18.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CLIENT_LICENSE" Width="1.5" PointX="19.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CODE" Width="1.5" PointX="19.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.COMPANY" Width="1.5" PointX="20.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CREDIT_NOTE" Width="1.5" PointX="20.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER" Width="1.5" PointX="21.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER_CREDITTAGING" Width="1.5" PointX="7.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER_FEEDBACK" Width="1.5" PointX="13.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER_LEDGER" Width="1.5" PointX="15.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER_PRINCIPAL_CREDITLIMIT" Width="1.5" PointX="21.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER_PROXIMITY" Width="1.5" PointX="22.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMER1" Width="1.5" PointX="22.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DAILY_CLOSE" Width="1.5" PointX="17.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DASHBOARD_FILE" Width="1.5" PointX="23.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Deduction" Width="1.5" PointX="23.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DEPARTMENT_TYPE" Width="1.5" PointX="9.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DETAIL_CATEGORY" Width="1.5" PointX="23.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DEVICE" Width="1.5" PointX="23.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DEVICE_ALLOCATION" Width="1.5" PointX="19.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR" Width="1.5" PointX="8.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_AREA" Width="1.5" PointX="24.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_ASSIGNMENT" Width="1.5" PointX="24.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_ROUTE" Width="1.5" PointX="5.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_SETTINGS" Width="1.5" PointX="21.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_TOWN" Width="1.5" PointX="23.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_TYPE" Width="1.5" PointX="7.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_USER" Width="1.5" PointX="5.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.dtproperty" Width="1.5" PointX="25.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.EMPLOYEE_SALARY" Width="1.5" PointX="25.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.EMPLOYEE_SALARY_ALLOWANCE" Width="1.5" PointX="25.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.EMPLOYEE_SALARY_DEDUCTION" Width="1.5" PointX="25.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.FACING_TYPE" Width="1.5" PointX="25.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.FINISHED_GOOD_DETAIL" Width="1.5" PointX="15.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.FINISHED_GOOD_MASTER" Width="1.5" PointX="25.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.GEO_HIERARCHY" Width="1.5" PointX="26.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.GL_MASTER" Width="1.5" PointX="27.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.INVENTORYTYPE" Width="1.5" PointX="10.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.INVOICE_BILLTY_DETAIL" Width="1.5" PointX="27.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ITEM_DEAL_ASSIGNMENT" Width="1.5" PointX="3.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Item_Deal_Assignment_Detail" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ITEM_FACING" Width="1.5" PointX="12.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ITEM_INFORMATION" Width="1.5" PointX="27.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.LEDGER" Width="1.5" PointX="27.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.LEGEND" Width="1.5" PointX="28.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.LOYALTY_CARD" Width="1.5" PointX="2.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.MEASURMENT" Width="1.5" PointX="4.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.MODULE" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.MSpeer_lsns" Width="1.5" PointX="17.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.OPEN_CHEQUE_PAY_ORDER" Width="1.5" PointX="19.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PAYSICAL_STOCK" Width="1.5" PointX="21.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PHASE" Width="1.5" PointX="23.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PRECENT" Width="1.5" PointX="29.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PRECENTSTREET" Width="1.5" PointX="29.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PRINCIPAL_ADDRESS" Width="1.5" PointX="29.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PRODUCT_PRICE" Width="1.5" PointX="14.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PRODUCT_SECTION" Width="1.5" PointX="29.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROJECT" Width="1.5" PointX="29.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION" Width="1.5" PointX="29.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION_CUSTOMER_TYPE" Width="1.5" PointX="29.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION_CUSTOMER_VOLUMECLASS" Width="1.5" PointX="30.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION_FOR" Width="1.5" PointX="10.75" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION_OFFER" Width="1.5" PointX="25.75" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PURCHASE_DETAIL" Width="1.5" PointX="31.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PURCHASE_MASTER" Width="1.5" PointX="31.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ROLE_DETAIL" Width="1.5" PointX="31.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ROLE_MASTER" Width="1.5" PointX="31.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALARY_ALLOWANCE_DETAIL" Width="1.5" PointX="31.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALARY_DEDUCTION_DETAIL" Width="1.5" PointX="31.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALARY_DETAIL" Width="1.5" PointX="31.75" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_FORCE_CASH" Width="1.5" PointX="27.75" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_INVOICE_CONSUMED" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_INVOICE_DETAIL" Width="1.5" PointX="6" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_INVOICE_MASTER" Width="1.5" PointX="0.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_INVOICE_PROMOTION" Width="1.5" PointX="4.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_MASTER" Width="1.5" PointX="16.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_ORDER_DETAIL" Width="1.5" PointX="18.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_ORDER_MASTER" Width="1.5" PointX="20.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_ORDER_PROMOTION" Width="1.5" PointX="22.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALEFORCE_AREA_ASSIGNMENT" Width="1.5" PointX="32.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALEFORCE_PRINCIPAL_ASSIGNMENT" Width="1.5" PointX="29.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALES_RETURN_DETAIL" Width="1.5" PointX="31.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALES_RETURN_MASTER" Width="1.5" PointX="0.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALESFORCE_COMPANY" Width="1.5" PointX="33.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SCHEME" Width="1.5" PointX="33.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SECTOR" Width="1.5" PointX="33.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SERVICE" Width="1.5" PointX="10.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_RECEIPENT" Width="1.5" PointX="12.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_RECEIPENT_REPORT" Width="1.5" PointX="33.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_RECEIPENT_TIME" Width="1.5" PointX="33.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_REPORT_LOG" Width="1.5" PointX="33.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_TIME" Width="1.5" PointX="33.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SETTINGS_TABLE" Width="1.5" PointX="33.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SHIFT" Width="1.5" PointX="33.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SHIFT_CLOSE" Width="1.5" PointX="33.75" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SHIFT_OPENING_AMOUNT" Width="1.5" PointX="35.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SHORT_EXCESS" Width="1.5" PointX="35.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKIP_CHEQUE" Width="1.5" PointX="35.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_COUNTRY" Width="1.5" PointX="35.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_GROUP" Width="1.5" PointX="35.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_GROUP_DETAIL" Width="1.5" PointX="35.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_HIERARCHY" Width="1.5" PointX="35.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_PRICES" Width="1.5" PointX="24.75" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_STOCK" Width="1.5" PointX="35.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_STOCK_REGISTER" Width="1.5" PointX="26.75" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SLIP_NOTE_DETAIL" Width="1.5" PointX="35.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SLIP_NOTE_MASTER" Width="1.5" PointX="28.75" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.STREET" Width="1.5" PointX="35.75" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SUB_CATEGORY" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.sysdiagram" Width="1.5" PointX="35.75" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.TableDefination" Width="1.5" PointX="6.75" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.TabRecconcilation" Width="1.5" PointX="37.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.TARGET" Width="1.5" PointX="2.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_INVENTORY_UPDATE_DETAIL" Width="1.5" PointX="37.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_INVENTORY_UPDATE_MASTER" Width="1.5" PointX="37.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_ISSUANCE_DETAIL" Width="1.5" PointX="12.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_ISSUANCE_MASTER" Width="1.5" PointX="37.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_ITEM_LOG" Width="1.5" PointX="37.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_DETAIL" Width="1.5" PointX="37.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_INS" Width="1.5" PointX="37.75" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_INS_DETAIL" Width="1.5" PointX="30.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_INS_MASTER" Width="1.5" PointX="32.75" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_MASTER" Width="1.5" PointX="37.75" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_PURCHASE_RETURN" Width="1.5" PointX="14.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_REBATE_DETAIL" Width="1.5" PointX="16.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_REBATE_MASTER" Width="1.5" PointX="34.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_DETAIL" Width="1.5" PointX="39.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_INS" Width="1.5" PointX="39.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_INS_DETAIL" Width="1.5" PointX="39.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_INS_MASTER" Width="1.5" PointX="39.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_MASTER" Width="1.5" PointX="18.75" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_REBATE_DETAIL" Width="1.5" PointX="20.75" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_REBATE_MASTER" Width="1.5" PointX="39.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tbl_SALE_RETURN" Width="1.5" PointX="39.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblAppSetting" Width="1.5" PointX="11" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblAppSettingDetail" Width="1.5" PointX="13.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblCOAMapping" Width="1.5" PointX="39.75" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblDataType" Width="1.5" PointX="8.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblFinancialYear" Width="1.5" PointX="11.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblLoyaltyCardSalab" Width="1.5" PointX="4.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblModuleColInfo" Width="1.5" PointX="11" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblModuleParamInfo" Width="1.5" PointX="14" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblPackageMaterial" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblPackageMaterialDetail" Width="1.5" PointX="3" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblPhysicalStockTaking" Width="1.5" PointX="6.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblPhysicalStockTakingDetail" Width="1.5" PointX="22.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblRecipeProductionDetail" Width="1.5" PointX="18" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblRecipeProductionMaster" Width="1.5" PointX="15.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblReportDashboardInfo" Width="1.5" PointX="11" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblSKUModifier" Width="1.5" PointX="3" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.TOWN" Width="1.5" PointX="39.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.TRANSPOTER" Width="1.5" PointX="41.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.UOM" Width="1.5" PointX="41.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.UOM1" Width="1.5" PointX="41.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.USER" Width="1.5" PointX="41.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.USER_LOG" Width="1.5" PointX="41.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.VENDOR_LEDGER" Width="1.5" PointX="41.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.VENDOR" Width="1.5" PointX="41.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.VIEW_LOG" Width="1.5" PointX="41.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.VILLATYPE" Width="1.5" PointX="41.75" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.VOUCHER_TYPE" Width="1.5" PointX="36.75" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.ACCOUNT_HEAD_SERIAL" Width="1.5" PointX="41.75" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.BALANCE_TYPE" Width="1.5" PointX="0.75" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CHEQUE_PROCESS" Width="1.5" PointX="28.75" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CHEQUE_PROCESS_CROSS_DETAIL" Width="1.5" PointX="41.75" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CHEQUE_PROCESS_DETAIL" Width="1.5" PointX="43.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Credit_Detail_Report" Width="1.5" PointX="43.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.CUSTOMERSALE_REPORT" Width="1.5" PointX="43.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.customertemp" Width="1.5" PointX="8.75" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.DISTRIBUTOR_MSG" Width="1.5" PointX="43.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.GD_DAILYBALANCE" Width="1.5" PointX="43.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.GL_DETAIL" Width="1.5" PointX="43.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.MSpeer_originatorid_history" Width="1.5" PointX="43.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.PROMOTION_FOR_Customer" Width="1.5" PointX="24.75" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.Query" Width="1.5" PointX="43.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.RIMS_INVOICE_MASTER" Width="1.5" PointX="43.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SALE_STOCK_DATA" Width="1.5" PointX="43.75" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SES_REPORT" Width="1.5" PointX="38.75" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.SKU_RATE" Width="1.5" PointX="43.75" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NSAModel.tblLoyaltyCardSalabLocation" Width="1.5" PointX="43.75" PointY="44.5" IsExpanded="true" />
+        <AssociationConnector Association="NSAModel.FK_tblAppSetting_DISTRIBUTOR" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_DISTRIBUTOR_USER_DISTRIBUTOR_USER" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblRecipeProductionDetail_FINISHED_GOOD_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_DETAIL_ITEM_DEAL_ASSIGNMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_DETAIL_Item_Deal_Assignment_Detail" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblModuleColInfo_MODULE" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblModuleParamInfo_MODULE" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblReportDashboardInfo_MODULE" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_CONSUMED_SALE_INVOICE_MASTER" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_CONSUMED_SKUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_DETAIL_SALE_INVOICE_MASTER" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SALE_INVOICE_DETAIL_SKUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblPackageMaterial_SKUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblPackageMaterialDetail_SKUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblSKUModifier_SKUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_SUB_CATEGORY_SUB_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblAppSetting_tblDataType" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblAppSettingDetail_tblAppSetting" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblAppSettingDetail_tblDataType" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblModuleColInfo_tblDataType" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblModuleParamInfo_tblFinancialYear" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblModuleColInfo_tblModuleParamInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="NSAModel.FK_tblRecipeProductionDetail_tblRecipeProductionMaster" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

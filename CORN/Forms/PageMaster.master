@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Forms/Test.master" AutoEventWireup="true"
+     CodeFile="PageMaster.master.cs" Inherits="Forms_PageMaster" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainCopy" Runat="Server">
+<asp:ContentPlaceHolder ID="cphHeadPage" runat="server">
+</asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="cphPage" runat="server">
+    
+</asp:ContentPlaceHolder>
+</asp:Content>

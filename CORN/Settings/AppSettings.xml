@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppSettings>
+
+  <Server>samsl.faastdemo.com</Server>
+  <DBName>NSA</DBName>
+  <!--<DBName>SAMS-Aman</DBName>-->
+	<!--<DBName>NSA</DBName>-->
+  <DBUser>sa</DBUser>
+  <DBPassword>Fast12341234</DBPassword>
+  <DBAuthentication>MSDE</DBAuthentication>
+
+
+</AppSettings>
